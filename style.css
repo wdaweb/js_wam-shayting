@@ -1,0 +1,159 @@
+html,
+body {
+  font-family: "Gluten", "Noto Sans TC", sans-serif;
+}
+.wrap {
+  border: burlywood 1px solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 700px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  background: url(./images/gamebg.jpeg) no-repeat center/cover;
+}
+
+#begin {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(./images/background.jpg) no-repeat center/cover;
+  z-index: 5;
+}
+
+#begin .logo {
+  width: 300px;
+  margin: auto;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo img {
+  width: 300px;
+}
+
+#start {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15%;
+  position: absolute;
+  font-family: "Gluten", "Noto Sans TC", sans-serif;
+  cursor: pointer;
+  padding: 10px 18px;
+  font-size: 20px;
+  background: rgb(227, 0, 27);
+  color: rgb(225, 245, 209);
+  border: 3px solid rgb(225, 245, 209);
+  box-shadow: -4px 4px 1px black;
+}
+
+#start:hover{
+  box-shadow: none;
+  transform-origin: center;
+  transform: translateX(-52%) translateY(4px);
+}
+#start:active {
+  box-shadow: none;
+  transform-origin: center;
+  transform: translateX(-52%) translateY(4px);
+}
+
+#game {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 600px;
+  height: 400px;
+  transform: translateX(-50%);
+  cursor: url("./images/hammer.png") 50 5, auto;
+}
+
+.jerry {
+  background: url("./images/jerryrun.gif") no-repeat center/contain;
+  transition: 0.3s;
+}
+
+.trap {
+  background: url("./images/trap.png") no-repeat center/contain;
+  transition: 0.3s;
+}
+.catched {
+  background: url("./images/angry.png") no-repeat center/contain;
+}
+
+.wrongCatch{
+  background: url("./images/sadTom.png") no-repeat center/contain;
+}
+
+#countDown {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: darkgoldenrod;
+  position: relative;
+}
+
+#countDown .bar {
+  width: 100%;
+  height: 40px;
+  text-align: right;
+  background-color: rgb(43, 153, 226);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#countDown .bar img {
+  height: 30px;
+  vertical-align: bottom;
+}
+
+.time {
+  color: azure;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+}
+
+.animation {
+  animation: countDown 30s linear;
+}
+
+.highest {
+  color: azure;
+  position: absolute;
+  left: 50px;
+  top: 70px;
+}
+.scoreBox {
+  position: absolute;
+  top: 70px;
+  right: 50px;
+  text-align: center;
+  width: 100px;
+  font-size: 20px;
+  color: rgb(242, 237, 80);
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+/* 動畫 */
+
+@keyframes countDown {
+  0% {
+    width: 100%;
+    background-color: deepskyblue;
+  }
+  50% {
+    width: 50%;
+    background-color: darkorange;
+  }
+  100% {
+    width: 0;
+    background: crimson;
+  }
+}

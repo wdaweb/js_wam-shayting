@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@300;500&family=Noto+Sans+TC&display=swap"
+    rel="stylesheet">
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Catch Jerry</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <div id="begin">
+      <input type="button" value="START" id="start">
+      <br>
+      <div class="logo">
+        <img class="animate__animated animate__bounce" src="./images/logo.png" alt="">
+      </div>
+    </div>
+    <div id="countDown">
+      <div class="bar">
+        <img src="./images/tomrun.gif" alt="">
+      </div>
+      <div class="time">Time Left: <span id="second">30</span></div>
+    </div>
+    <div class="highest">
+      Top Player: <span id="highname">???</span>&nbsp;
+      Top Score: <span id="highscore">0</span>
+    </div>
+    <div class="scoreBox">Score: <span id="score">0</span></div>
+    <table id="game">
+      <tr>
+        <td class="hole" id="hole1"></td>
+        <td class="hole" id="hole2"></td>
+        <td class="hole" id="hole3"></td>
+        <td class="hole" id="hole4"></td>
+        <td class="hole" id="hole5"></td>
+        <td class="hole" id="hole6"></td>
+        <td class="hole" id="hole7"></td>
+        <td class="hole" id="hole8"></td>
+      </tr>
+      <tr>
+        <td class="hole" id="hole9"></td>
+        <td class="hole" id="hole10"></td>
+        <td class="hole" id="hole11"></td>
+        <td class="hole" id="hole12"></td>
+        <td class="hole" id="hole13"></td>
+        <td class="hole" id="hole14"></td>
+        <td class="hole" id="hole15"></td>
+        <td class="hole" id="hole16"></td>
+      </tr>
+      <tr>
+        <td class="hole" id="hole17"></td>
+        <td class="hole" id="hole18"></td>
+        <td class="hole" id="hole19"></td>
+        <td class="hole" id="hole20"></td>
+        <td class="hole" id="hole21"></td>
+        <td class="hole" id="hole22"></td>
+        <td class="hole" id="hole23"></td>
+        <td class="hole" id="hole24"></td>
+      </tr>
+      <tr>
+        <td class="hole" id="hole25"></td>
+        <td class="hole" id="hole26"></td>
+        <td class="hole" id="hole27"></td>
+        <td class="hole" id="hole28"></td>
+        <td class="hole" id="hole29"></td>
+        <td class="hole" id="hole30"></td>
+        <td class="hole" id="hole31"></td>
+        <td class="hole" id="hole32"></td>
+      </tr>
+      <tr>
+        <td class="hole" id="hole33"></td>
+        <td class="hole" id="hole34"></td>
+        <td class="hole" id="hole35"></td>
+        <td class="hole" id="hole36"></td>
+        <td class="hole" id="hole37"></td>
+        <td class="hole" id="hole38"></td>
+        <td class="hole" id="hole39"></td>
+        <td class="hole" id="hole40"></td>
+      </tr>
+    </table>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>
